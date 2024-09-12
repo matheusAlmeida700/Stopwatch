@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+:root {
+  --primary-color: #0353a4;
+  --secondary-color: #7d8597;
+  --light-color: #cae9ff;
+  --background-color: #7d8597;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: var(--light-color);
+  font-size: 4rem;
+}
+
+#stopwatch-display {
+  font-family: "Nunito";
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 0.6rem;
+  border-radius: 20px;
+  background-color: #d3d3d3;
+}
+
+.primary-button {
+  background-color: #137547;
+}
+
+.secondary-button {
+  background-color: #ba181b;
+  color: #d3d3d3;
+}
+
+button.primary-button:hover {
+  transition: all 0.2s ease;
+  background-color: #3fa34d;
+}
+
+button.secondary-button:hover {
+  transition: all 0.2s ease;
+  background-color: #e42e31;
+}
+
+button.reset-button:hover {
+  transition: all 0.2s ease;
+  background-color: #e6e6e6;
+}
+
+/*focus é quando aperta tab e o botão seleciona*/
+button:focus {
+  border: 3px solid black;
+}
+
+#stopwatch-wrapper {
+  background-color: #003f88;
+  padding: 1.3rem;
+  border-radius: 20px;
+}
+
+.button-box {
+  margin: 1rem 0 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 7px;
+  }
+}
